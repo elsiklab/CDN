@@ -17431,11 +17431,11 @@ r("mori.zip.remove",function(a){Q.c(a,0,null);var b=Q.c(a,1,null),b=xc(b)?T.a(cc
           
             __out.push('<!-- does it make sense to show a perPage switcher? -->\n');
           
-            if (this.total > 5) {
+            if (this.total > 50) {
               __out.push('\n    <div class="small button dropdown secondary right">\n        ');
               __out.push(__sanitize(this.perPage));
               __out.push(' rows per page\n        <ul class="no-hover">\n            ');
-              _ref = [5, 10, 20, 50, 100];
+              _ref = [50, 100, 150];
               for (_i = 0, _len = _ref.length; _i < _len; _i++) {
                 n = _ref[_i];
                 if (!(n <= this.total)) {
@@ -18363,7 +18363,7 @@ r("mori.zip.remove",function(a){Q.c(a,0,null);var b=Q.c(a,1,null),b=xc(b)?T.a(cc
             _base.total = 0;
           }
           if ((_base1 = this.options).perPage == null) {
-            _base1.perPage = 5;
+            _base1.perPage = 50;
           }
           if ((_base2 = this.options).current == null) {
             _base2.current = 1;
