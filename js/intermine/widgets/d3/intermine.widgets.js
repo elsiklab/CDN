@@ -41,7 +41,6 @@ merge = function(child, parent) {
 var Exporter, PlainExporter,
   __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
 
-console.log("HELLOOOOOO");
 Exporter = (function() {
 
   Exporter.prototype.mime = 'text/plain';
@@ -485,7 +484,7 @@ factory = function(Backbone) {
     };
   
     EnrichmentWidget.prototype.errorCorrections = ["Holm-Bonferroni", "Benjamini Hochberg", "Bonferroni", "None"];
-  
+    console.log('Testing console'); 
     EnrichmentWidget.prototype.pValues = ["0.05", "0.10", "1.00"];
   
     EnrichmentWidget.prototype.spec = {
