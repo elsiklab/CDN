@@ -41,6 +41,7 @@ merge = function(child, parent) {
 var Exporter, PlainExporter,
   __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
 
+console.log("HELLOOOOOO");
 Exporter = (function() {
 
   Exporter.prototype.mime = 'text/plain';
