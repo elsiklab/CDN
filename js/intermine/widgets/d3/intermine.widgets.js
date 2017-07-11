@@ -483,8 +483,7 @@ factory = function(Backbone) {
       }
     };
   
-    EnrichmentWidget.prototype.errorCorrections = ["Holm-Bonferroni", "Benjamini Hochberg", "Bonferroni", "None"];
-    console.log('Testing console'); 
+    EnrichmentWidget.prototype.errorCorrections = ["Hlm-Bonferroni", "Benjamini Hochberg", "Bonferroni", "None"];
     EnrichmentWidget.prototype.pValues = ["0.05", "0.10", "1.00"];
   
     EnrichmentWidget.prototype.spec = {
@@ -523,7 +522,7 @@ factory = function(Backbone) {
   
       this.widgetOptions = merge(widgetOptions, this.widgetOptions);
       this.formOptions = {
-        errorCorrection: "Holm-Bonferroni",
+        errorCorrection: "Hlm-Bonferroni",
         pValue: "0.05"
       };
       EnrichmentWidget.__super__.constructor.call(this);
