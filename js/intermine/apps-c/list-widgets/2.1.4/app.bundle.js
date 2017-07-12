@@ -15080,7 +15080,7 @@ google.loader.rpl({":chrome-frame":{"versions":{":1.0.0":{"uncompressed":"CFInst
           var req;
           req = merge({
             maxp: 0.05,
-            correction: 'Holm-Bonferroni'
+            correction: 'Hlm-Bonferroni'
           }, opts);
           return withCB(cb, _this.get(ENRICHMENT_PATH, req).then(get('results')));
         };
@@ -25412,11 +25412,11 @@ function through (write, end, opts) {
         };
       
         EnrichmentWidget.prototype.formOptions = {
-          errorCorrection: "Holm-Bonferroni",
+          errorCorrection: "Hlm-Bonferroni",
           pValue: "0.05"
         };
       
-        EnrichmentWidget.prototype.errorCorrections = ["Holm-Bonferroni", "Benjamini Hochberg", "Bonferroni", "None"];
+        EnrichmentWidget.prototype.errorCorrections = ["Hlm-Bonferroni", "Benjamini Hochberg", "Bonferroni", "None"];
       
         EnrichmentWidget.prototype.pValues = ["0.05", "0.10", "1.00"];
       
@@ -25456,7 +25456,7 @@ function through (write, end, opts) {
         @param {string} id widgetId
         @param {string} bagName myBag
         @param {string} el #target
-        @param {object} widgetOptions { "title": true/false, "description": true/false, "matchCb": function(id, type) {}, "resultsCb": function(pq) {}, "listCb": function(pq) {}, "errorCorrection": "Holm-Bonferroni", "pValue": "0.05" }
+        @param {object} widgetOptions { "title": true/false, "description": true/false, "matchCb": function(id, type) {}, "resultsCb": function(pq) {}, "listCb": function(pq) {}, "errorCorrection": "Hlm-Bonferroni", "pValue": "0.05" }
         */
       
       
@@ -29466,7 +29466,7 @@ function through (write, end, opts) {
         @param {string} id Represents a widget identifier as represented in webconfig-model.xml
         @param {string} bagName List name to use with this Widget.
         @param {jQuery selector} el Where to render the Widget to.
-        @param {Object} widgetOptions `{ "title": true/false, "description": true/false, "matchCb": function(id, type) {}, "resultsCb": function(pq) {}, "listCb": function(pq) {}, "errorCorrection": "Holm-Bonferroni", "pValue": "0.05" }`
+        @param {Object} widgetOptions `{ "title": true/false, "description": true/false, "matchCb": function(id, type) {}, "resultsCb": function(pq) {}, "listCb": function(pq) {}, "errorCorrection": "Hlm-Bonferroni", "pValue": "0.05" }`
         */
       
       
