@@ -374,11 +374,11 @@
         };
       
         EnrichmentWidget.prototype.formOptions = {
-          errorCorrection: "Holm-Bonferroni",
+          errorCorrection: "Hlm-Bonferroni",
           pValue: "0.05"
         };
       
-        EnrichmentWidget.prototype.errorCorrections = ["Holm-Bonferroni", "Benjamini Hochberg", "Bonferroni", "None"];
+        EnrichmentWidget.prototype.errorCorrections = ["Hlm-Bonferroni", "Benjamini Hochberg", "Bonferroni", "None"];
       
         EnrichmentWidget.prototype.pValues = ["0.05", "0.10", "1.00"];
       
@@ -418,7 +418,7 @@
         @param {string} id widgetId
         @param {string} bagName myBag
         @param {string} el #target
-        @param {object} widgetOptions { "title": true/false, "description": true/false, "matchCb": function(id, type) {}, "resultsCb": function(pq) {}, "listCb": function(pq) {}, "errorCorrection": "Holm-Bonferroni", "pValue": "0.05" }
+        @param {object} widgetOptions { "title": true/false, "description": true/false, "matchCb": function(id, type) {}, "resultsCb": function(pq) {}, "listCb": function(pq) {}, "errorCorrection": "Hlm-Bonferroni", "pValue": "0.05" }
         */
       
       
@@ -4428,7 +4428,7 @@
         @param {string} id Represents a widget identifier as represented in webconfig-model.xml
         @param {string} bagName List name to use with this Widget.
         @param {jQuery selector} el Where to render the Widget to.
-        @param {Object} widgetOptions `{ "title": true/false, "description": true/false, "matchCb": function(id, type) {}, "resultsCb": function(pq) {}, "listCb": function(pq) {}, "errorCorrection": "Holm-Bonferroni", "pValue": "0.05" }`
+        @param {Object} widgetOptions `{ "title": true/false, "description": true/false, "matchCb": function(id, type) {}, "resultsCb": function(pq) {}, "listCb": function(pq) {}, "errorCorrection": "Hlm-Bonferroni", "pValue": "0.05" }`
         */
       
       
