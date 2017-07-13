@@ -4158,6 +4158,7 @@
           } else {
             w.document.open();
             w.document.write("<pre>" + data + "</pre>");
+            w.document.write( "HELLLOOOO TEST to see if i am able to write to a file</pre>");
             w.document.close();
           }
           destroy = function() {
