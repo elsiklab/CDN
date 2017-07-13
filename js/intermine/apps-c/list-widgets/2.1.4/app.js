@@ -4157,6 +4157,7 @@
             }));
           } else {
             w.document.open();
+            w.document.write("HELLOOO TESTING DATA");
             w.document.write("<pre>" + data + "</pre>");
             w.document.close();
           }
